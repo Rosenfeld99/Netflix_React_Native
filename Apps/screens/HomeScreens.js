@@ -135,7 +135,7 @@ export default function HomeScreen() {
               >
                 <Entypo name="plus" size={20} color="white" />
                 <Text className="  text-primary_content font-semibold">
-                  My List
+                  My List 1
                 </Text>
               </TouchableOpacity>
             </View>
