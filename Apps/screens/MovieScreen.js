@@ -19,8 +19,6 @@ import {
   fetchMovieDetails,
   fetchSearchCollection,
   fetchSimilarMovies,
-  image185,
-  image342,
   image500,
   imageOriginal,
 } from "../api/movieDB";
