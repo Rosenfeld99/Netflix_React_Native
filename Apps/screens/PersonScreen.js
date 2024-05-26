@@ -54,7 +54,7 @@ export default function PersonScreen() {
   return (
     <ScrollView
       contentContainerStyle={{ paddingBottom: 20 }}
-      className="bg-neutral-900 flex-1"
+      className="bg-primary flex-1"
     >
       <SafeAreaView
         className={`z-20 w-full flex-row justify-between items-center px-4 ${verticslMarin}`}
@@ -138,8 +138,8 @@ export default function PersonScreen() {
               </View>
             </View>
             <View className="my-6 mx-4 space-y-2">
-              <Text className="text-white text-lg capitalize">byography</Text>
-              <Text className="text-neutral-400 capitalize tracking-wide">
+              <Text className="text-white text-lg font-semibold capitalize">byography</Text>
+              <Text className="text-white capitalize tracking-wide text-justify">
                 {person?.biography || "N/A"}
               </Text>
             </View>

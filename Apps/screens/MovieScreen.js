@@ -29,6 +29,7 @@ import { SimpleLineIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import MovieGrid from "../components/MovieGrid";
 import useUser from "../hooks/useUser";
+import VideoMovieDetaile from "../components/Videos/VideoMovieDetaile";
 
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";
@@ -57,7 +58,7 @@ export default function MovieScreen() {
 
   const getMovieDetailes = async (id) => {
     const data = await fetchMovieDetails(id);
-    // console.log("get movie detailes ", data);
+    console.log("get movie detailes ", data);
     if (data) setMovie(data);
     setLoading(false);
   };
@@ -109,16 +110,20 @@ export default function MovieScreen() {
       >
         <View className="w-full ">
           <View>
-            <Image
-              className="bg-sckeleton sckeleton_animation"
-              style={{ width, height: height * 0.26 }}
-              // source={require("../../assets/icon.png")}
-              source={{
-                uri:
-                  image500(item?.backdrop_path || item?.poster_path) ||
-                  fallbackImagePoster,
-              }}
-            />
+            {true ? (
+              <Image
+                className="bg-sckeleton sckeleton_animation"
+                style={{ width, height: height * 0.26 }}
+                // source={require("../../assets/icon.png")}
+                source={{
+                  uri:
+                    image500(item?.backdrop_path || item?.poster_path) ||
+                    fallbackImagePoster,
+                }}
+              />
+            ) : (
+              <>{/* Adding video detaile */}</>
+            )}
           </View>
         </View>
         {/* Movie details */}
