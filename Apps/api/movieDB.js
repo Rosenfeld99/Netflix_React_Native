@@ -17,7 +17,7 @@ const searchMovieEndpoint = `${API_BASE_URL}/search/movie?api_key=${API_KEY}&&la
 
 // Dynamic endpoint
 const movieDetailsEndpoint = (id) =>
-  `${API_BASE_URL}/movie/${id}?api_key=${API_KEY}&&language=en-US`;
+  `${API_BASE_URL}/movie/${id}?api_key=${API_KEY}&&language=en-US&append_to_response=videos`;
 const movieCreditsEndpoint = (id) =>
   `${API_BASE_URL}/movie/${id}/credits?api_key=${API_KEY}&&language=en-US`;
 const similarMoviesEndpoint = (id) =>
