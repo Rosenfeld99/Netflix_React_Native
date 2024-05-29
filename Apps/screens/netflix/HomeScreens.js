@@ -14,22 +14,22 @@ import {
   Bars3CenterLeftIcon,
   MagnifyingGlassIcon,
 } from "react-native-heroicons/outline";
-import { styles } from "../../theme/index.js";
-import TrendingMovies from "../components/TrendingMovies.js";
-import MovieList from "../components/MovieList.js";
+import { styles } from "../../../theme/index.js";
+import TrendingMovies from "../../components/TrendingMovies.js";
+import MovieList from "../../components/MovieList.js";
 import { useNavigation } from "@react-navigation/native";
-import Loading from "../components/Loading.js";
+import Loading from "../../components/Loading.js";
 import {
   fallbackImagePoster,
   fetchTopRatedMovies,
   fetchTrandingMovies,
   fetchupcomingMovies,
   image500,
-} from "../api/movieDB.js";
+} from "../../api/movieDB.js";
 import { LinearGradient } from "expo-linear-gradient";
 import { Entypo } from "@expo/vector-icons";
-import useUser from "../hooks/useUser.js";
-import { LOGO_N_IMAGE } from "../../constants/index.js";
+import useUser from "../../hooks/useUser.js";
+import { LOGO_N_IMAGE } from "../../../constants/index.js";
 
 const ios = Platform.OS == "ios";
 export default function HomeScreen() {
