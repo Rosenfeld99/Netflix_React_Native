@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/material-bottom-tabs": "^6.2.28",
     "@react-navigation/stack": "^6.3.25",
     "axios": "^1.6.7",
     "deprecated-react-native-prop-types": "^5.0.0",
