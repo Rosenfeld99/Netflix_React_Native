@@ -5,5 +5,5 @@ import ShopNavigation from "./ShopNavigation";
 
 export default function AppNavigation() {
   // chacking if user interface of shop
-  return <>{false ? <ShopNavigation /> : <MovieNavigation />}</>;
+  return <>{!false ? <ShopNavigation /> : <MovieNavigation />}</>;
 }
