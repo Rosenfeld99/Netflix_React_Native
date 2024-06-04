@@ -9,9 +9,9 @@ import {
 import React from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { fallbackImagePoster } from "../api/movieDB";
-import { avatars } from "../../constants";
-import useUser from "../hooks/useUser";
+import { fallbackImagePoster } from "../../api/movieDB";
+import { avatars } from "../../../constants";
+import useUser from "../../hooks/useUser";
 
 export default function ChooseIconScreen() {
   const navigation = useNavigation();

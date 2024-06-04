@@ -10,9 +10,9 @@ import {
 } from "react-native";
 import { Octicons } from "@expo/vector-icons";
 import { useRoute, useNavigation } from "@react-navigation/native";
-import Cast from "../components/Cast";
-import MovieList from "../components/MovieList";
-import Loading from "../components/Loading";
+import Cast from "../../components/Cast";
+import MovieList from "../../components/MovieList";
+import Loading from "../../components/Loading";
 import {
   fallbackImagePoster,
   fetchMovieCredits,
@@ -21,15 +21,15 @@ import {
   fetchSimilarMovies,
   image500,
   imageOriginal,
-} from "../api/movieDB";
-import HeaderBack from "../utils/HeaderBack";
+} from "../../api/movieDB";
+import HeaderBack from "../../utils/HeaderBack";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
-import MovieGrid from "../components/MovieGrid";
-import useUser from "../hooks/useUser";
-import VideoMovieDetaile from "../components/Videos/VideoMovieDetaile";
+import MovieGrid from "../../components/MovieGrid";
+import useUser from "../../hooks/useUser";
+import VideoMovieDetaile from "../../components/Videos/VideoMovieDetaile";
 
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";

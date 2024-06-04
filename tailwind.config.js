@@ -16,7 +16,7 @@ module.exports = {
         shop_primary: "#ffffff", // Black
         shop_primary_content: "#3C2F2F", // Black
         shop_secondary: "#E50914", // Black
-        shop_secondary_content: "#ffffff", // Black
+        shop_secondary_content: "#6A6A6A", // Black
         shop_accent: "#d2d2d2", // Black
         shop_accent_content: "#ffffff", // Black
 

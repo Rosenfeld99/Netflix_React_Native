@@ -3,22 +3,22 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import HomeScreen from "../screens/netflix/HomeScreens";
-import MovieScreen from "../screens/MovieScreen";
-import PersonScreen from "../screens/PersonScreen";
-import SearchScreen from "../screens/SearchScreen";
-import SignupScreen from "../screens/SignupScreen";
-import SelectProfile from "../screens/SelectProfile";
+import MovieScreen from "../screens/netflix/MovieScreen";
+import PersonScreen from "../screens/netflix/PersonScreen";
+import SearchScreen from "../screens/netflix/SearchScreen";
+import SelectProfile from "../screens/netflix/SelectProfile";
 import useUser from "../hooks/useUser";
-import SigninScreen from "../screens/SigninScreen";
-import ComingSoonScreen from "../screens/ComingSoonScreen";
-import ViewListScreen from "../screens/ViewListScreen";
+import ComingSoonScreen from "../screens/netflix/ComingSoonScreen";
+import ViewListScreen from "../screens/netflix/ViewListScreen";
 
 import { Foundation, MaterialIcons, Feather } from "@expo/vector-icons";
 import { Image, View } from "react-native";
 import { getData } from "../utils/storageAction";
 import { TOKEN_KEY } from "../../constants";
-import EditProfileScreen from "../screens/EditProfileScreen";
-import ChooseIconScreen from "../screens/ChooseIconScreen";
+import EditProfileScreen from "../screens/netflix/EditProfileScreen";
+import ChooseIconScreen from "../screens/netflix/ChooseIconScreen";
+import SigninScreen from "../screens/auth/SigninScreen";
+import SignupScreen from "../screens/auth/SignupScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

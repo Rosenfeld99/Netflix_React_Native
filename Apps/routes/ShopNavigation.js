@@ -1,19 +1,14 @@
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import React from "react";
 import {
-  Entypo,
   Foundation,
   AntDesign,
   FontAwesome6,
   Feather,
 } from "@expo/vector-icons";
-import HomeScreen from "../screens/netflix/HomeScreens";
-import SignupScreen from "../screens/SignupScreen";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import useUser from "../hooks/useUser";
-import SigninScreen from "../screens/SigninScreen";
 import ShopSelectRestaurnt from "../screens/shop/ShopSelectRestaurnt";
 import ShopProductScreen from "../screens/shop/ShopProductScreen";
 import ShopCustomerSupport from "../screens/shop/ShopCustomerSupport";
