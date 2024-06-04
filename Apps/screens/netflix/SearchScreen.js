@@ -13,16 +13,16 @@ import React, { useCallback, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { XMarkIcon } from "react-native-heroicons/outline";
 import { useNavigation } from "@react-navigation/native";
-import Loading from "../components/Loading";
+import Loading from "../../components/Loading";
 import debounce from "lodash.debounce";
 import {
   fallbackImagePoster,
   fetchSearchMovies,
   image185,
-} from "../api/movieDB";
+} from "../../api/movieDB";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
-import HeaderBack from "../utils/HeaderBack";
+import HeaderBack from "../../utils/HeaderBack";
 
 const ios = Platform.OS == "ios";
 const { width, height } = Dimensions.get("window");
@@ -136,7 +136,7 @@ export default function SearchScreen() {
       ) : (
         <View>
           <Image
-            source={require("../../assets/movieTimepng.png")}
+            source={require("../../../assets/movieTimepng.png")}
             className="w-96 h-96 flex-row justify-center"
           />
         </View>

@@ -1,8 +1,8 @@
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import useUser from "../hooks/useUser";
-import { BACKGROUND_IMAGE } from "../../constants";
+import useUser from "../../hooks/useUser";
+import { BACKGROUND_IMAGE } from "../../../constants";
 
 export default function SignupScreen() {
   const { user, setUser } = useUser();
@@ -43,7 +43,7 @@ export default function SignupScreen() {
         <View className=" p-10 space-y-10 flex-col items-center justify-center flex-1">
           <Image
             className=" w-8 h-14"
-            source={require("../../assets/netflix_small.png")}
+            source={require("../../../assets/netflix_small.png")}
           />
           {!next ? (
             <View className=" w-full space-y-2 flex-col items-center justify-center">

@@ -1,9 +1,9 @@
 import { View, Text, ScrollView, Image } from "react-native";
 import React from "react";
-import MovieGrid from "../components/MovieGrid";
-import HeaderBack from "../utils/HeaderBack";
+import MovieGrid from "../../components/MovieGrid";
+import HeaderBack from "../../utils/HeaderBack";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { LOGO_N_IMAGE } from "../../constants";
+import { LOGO_N_IMAGE } from "../../../constants";
 
 export default function ViewListScreen() {
   const {

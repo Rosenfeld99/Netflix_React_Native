@@ -12,15 +12,15 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ChevronLeftIcon } from "react-native-heroicons/outline";
 import { HeartIcon } from "react-native-heroicons/solid";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import { styles } from "../../theme";
-import MovieList from "../components/MovieList";
-import Loading from "../components/Loading";
+import { styles } from "../../../theme";
+import MovieList from "../../components/MovieList";
+import Loading from "../../components/Loading";
 import {
   fallbackPersonImagePoster,
   fetchPersonDetailes,
   fetchPersonMovies,
   image342,
-} from "../api/movieDB";
+} from "../../api/movieDB";
 
 const { width, height } = Dimensions.get("window");
 const ios = Platform.OS == "ios";

@@ -6,7 +6,7 @@ import {
   AntDesign,
   Entypo,
 } from "@expo/vector-icons";
-import useUser from "../hooks/useUser";
+import useUser from "../../hooks/useUser";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 

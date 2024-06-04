@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRoute, useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign, FontAwesome6 } from "@expo/vector-icons";
-import useUser from "../hooks/useUser";
+import useUser from "../../hooks/useUser";
 
 export default function EditProfileScreen() {
   const {

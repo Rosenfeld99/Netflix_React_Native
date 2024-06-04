@@ -8,12 +8,12 @@ import {
   Animated,
 } from "react-native";
 import React, { useEffect, useRef, useState } from "react";
-import HeaderBack from "../utils/HeaderBack";
+import HeaderBack from "../../utils/HeaderBack";
 import { useNavigation } from "@react-navigation/native";
-import { LOGO_N_IMAGE } from "../../constants";
+import { LOGO_N_IMAGE } from "../../../constants";
 import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
-import { fetchupcomingMovies, image500 } from "../api/movieDB";
-import { formatDateToText } from "../utils/func";
+import { fetchupcomingMovies, image500 } from "../../api/movieDB";
+import { formatDateToText } from "../../utils/func";
 
 export default function ComingSoonScreen() {
   const { width, height } = Dimensions.get("window");

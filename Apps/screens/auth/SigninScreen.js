@@ -1,14 +1,14 @@
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import useUser from "../hooks/useUser";
-import { getData, storeData } from "../utils/storageAction";
+import useUser from "../../hooks/useUser";
+import { getData, storeData } from "../../utils/storageAction";
 import {
   BACKGROUND_IMAGE,
   LOGO_N_IMAGE,
   MDX_PROFILEID,
   TOKEN_KEY,
-} from "../../constants";
+} from "../../../constants";
 
 export default function SigninScreen() {
   const { signIn, setUser, getUserInfo } = useUser();
