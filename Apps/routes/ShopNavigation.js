@@ -9,7 +9,7 @@ import {
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import useUser from "../hooks/useUser";
-import ShopSelectRestaurnt from "../screens/shop/ShopSelectRestaurnt";
+import ShopSelectProducts from "../screens/shop/ShopSelectProducts";
 import ShopProductScreen from "../screens/shop/ShopProductScreen";
 import ShopCustomerSupport from "../screens/shop/ShopCustomerSupport";
 import { View } from "react-native";
@@ -47,7 +47,7 @@ export default function ShopNavigation() {
         component={ShopHomeScreen}
       />
       <Tab.Screen
-        name="SelectRestaurnt"
+        name="SelectProductFromShop"
         options={{
           headerShown: false,
           title: "",
@@ -59,7 +59,7 @@ export default function ShopNavigation() {
             />
           ),
         }}
-        component={ShopSelectRestaurnt}
+        component={ShopSelectProducts}
       />
       <Tab.Screen
         name="QuickAction"
@@ -68,7 +68,7 @@ export default function ShopNavigation() {
           title: "",
           tabBarIcon: ({ color, size, focused }) => (
             <View className=" relative">
-              <View className=" bg-shop_secondary w-14 h-14 rounded-full z-50 flex items-center justify-center mb-14">
+              <View className=" bg-shop_secondary w-14 h-14 rounded-full z-50 flex items-center justify-center mb-14 shadow-lg shadow-black">
                 <Feather name="plus" size={30} color={"#fff"} />
               </View>
 
@@ -79,7 +79,7 @@ export default function ShopNavigation() {
             </View>
           ),
         }}
-        component={ShopSelectRestaurnt}
+        component={ShopSelectProducts}
       />
       <Tab.Screen
         name="CustomerSupport"
@@ -101,6 +101,7 @@ export default function ShopNavigation() {
         options={{
           headerShown: false,
           tabBarButton: () => null,
+          tabBarStyle: { display: "none" },
         }}
         component={ShopProductScreen}
       />
