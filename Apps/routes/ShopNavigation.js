@@ -15,6 +15,7 @@ import ShopCustomerSupport from "../screens/shop/ShopCustomerSupport";
 import { View } from "react-native";
 import ShopFavoriteProductsScreen from "../screens/shop/ShopFavoriteProductsScreen";
 import ShopHomeScreen from "../screens/shop/ShopHomeScreen";
+import UserProfile from "../screens/shop/UserProfile";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -47,7 +48,7 @@ export default function ShopNavigation() {
         component={ShopHomeScreen}
       />
       <Tab.Screen
-        name="SelectProductFromShop"
+        name="UserProfile"
         options={{
           headerShown: false,
           title: "",
@@ -59,7 +60,7 @@ export default function ShopNavigation() {
             />
           ),
         }}
-        component={ShopSelectProducts}
+        component={UserProfile}
       />
       <Tab.Screen
         name="QuickAction"
